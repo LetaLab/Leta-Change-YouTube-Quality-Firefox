@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Leta Change YouTube Quality</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="header">
+    <span class="title">Leta Change YouTube Quality</span>
+    <label class="toggle" title="Enable or disable quality enforcement">
+      <input type="checkbox" id="enabled" checked>
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <label class="field-label" for="quality">Preferred quality</label>
+  <select id="quality">
+    <option value="highest">Highest available</option>
+    <option value="hd2160">2160p (4K)</option>
+    <option value="hd1440">1440p</option>
+    <option value="hd1080">1080p</option>
+    <option value="hd720">720p</option>
+    <option value="large">480p</option>
+    <option value="medium">360p</option>
+    <option value="small">240p</option>
+    <option value="tiny">144p</option>
+  </select>
+
+  <p class="hint">If a video does not offer your chosen quality, the highest quality it does offer is used instead.</p>
+
+  <div class="status" id="status">Saved</div>
+
+  <a class="letalab-link" href="https://letalab.eu" target="_blank" rel="noopener noreferrer">
+    <img src="../icons/letalab-icon-32.png" alt="" class="letalab-icon">
+    <span>Visit LetaLab.eu</span>
+  </a>
+
+  <footer class="footer">youtube.com only - no tracking, no network calls</footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
